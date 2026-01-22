@@ -397,7 +397,7 @@
 </div>
 
 
-<!-- Health Points Tab -->
+<!-- <!-- Health Points Tab -->
 <div class="tab-content" id="tab-health">
   <div class="dashboard-inner">
 
@@ -406,7 +406,6 @@
       <div class="menu-item active" data-hp-inner="dashboard">HP Dashboard</div>
       <div class="menu-item" data-hp-inner="individual">Individual HP</div>
       <div class="menu-item" data-hp-inner="reasons">Add / Delete Reasons</div>
-      <div class="menu-item" data-hp-inner="attendance">Attendance</div>
     </div>
 
     <!-- RIGHT VIEW -->
@@ -428,7 +427,7 @@
             <tbody></tbody>
           </table>
         </div>
-      </div>
+      </div> -->
 
       <!-- INDIVIDUAL HP -->
       <div class="hp-inner-view" id="hp-individual-view">
@@ -443,12 +442,7 @@
           style="width:100%; height:80vh; border:none; border-radius:12px;">
         </iframe>
       </div>
-    <!-- Attendance -->
-      <div class="hp-inner-view" id="hp-attendance-view">
-       <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQqWa5RlbOQAwLlOj97MYBTZh8uBxRN1kR21k96LvrHyiiR7wcnvbI-BCh8nOixqQ3CBIziZcsj0dWP/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
-          style="width:100%; height:80vh; border:none; border-radius:12px;">
-        </iframe>
-      </div>
+
     </div>
   </div>
 </div>
@@ -473,7 +467,7 @@
 
 <script>
   // ========= CONFIG =========
-  const API_URL = "https://script.google.com/macros/s/AKfycbyU2YIGp55fzmJvhLP_DdNUTUCd6DbMHQUeayuFCL6xioWm7R0YB2L0KRftupQzGYR9Xw/exec";
+  const API_URL = "https://script.google.com/macros/s/AKfycbxRN-ueT8l-7xhEPEP-WNwUaI3_q45lNoOgEGyKd4_xfrppwd9XYTL-VC9cIsX0YEKx/exec";
   const HP_API_URL = "https://script.google.com/macros/s/AKfycbwq_M-IDZlZUlDMJ7gXuhLhNq304qdCLs60plmJ90TtVtLtnZURKPxnrRVeS3kwLzZ2Hg/exec";
   // We expect the API JSON to include these keys:
   // {
@@ -939,10 +933,6 @@ function activateHPInner(key) {
 
   if (key === 'reasons') {
     document.getElementById('hp-reasons-view').classList.add('active');
-  }
-
-   if (key === 'attendance') {
-    document.getElementById('hp-attendance-view').classList.add('active');
   }
 }
 
